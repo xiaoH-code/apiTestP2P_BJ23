@@ -1,0 +1,11 @@
+{
+  "test_register": [
+    {"desc": "输入必填项，注册成功","phone":"13011231111","pwd":"test123","verifycode":"8888","phonecode": "666666","dyServer": "on","invitephone": "","status_code": 200,"status": 200,"description": "注册成功"},
+    {"desc": "输入所有项，注册成功","phone":"13011231112","pwd":"test123","verifycode":"8888","phonecode": "666666","dyServer": "on","invitephone": "13012345678","status_code": 200,"status": 200,"description": "注册成功"},
+    {"desc": "输入已存在手机号，注册失败","phone":"13011231111","pwd":"test123","verifycode":"8888","phonecode": "666666","dyServer": "on","invitephone": "","status_code": 200,"status": 100,"description": "手机已存在!"},
+    {"desc": "输入密码为空，注册失败","phone":"13011231113","pwd":"","verifycode":"8888","phonecode": "666666","dyServer": "on","invitephone": "","status_code": 200,"status": 100,"description": "密码不能为空"},
+    {"desc": "输入图片验证码错误，注册失败","phone":"13011231114","pwd":"test123","verifycode":"1234","phonecode": "666666","dyServer": "on","invitephone": "","status_code": 200,"status": 100,"description": "验证码错误!"},
+    {"desc": "输入短信验证码错误，注册失败","phone":"13011231114","pwd":"test123","verifycode":"8888","phonecode": "123456","dyServer": "on","invitephone": "","status_code": 200,"status": 100,"description": "验证码错误"},
+    {"desc": "不同意注册协议，注册失败","phone":"13011231114","pwd":"test123","verifycode":"8888","phonecode": "666666","dyServer": "off","invitephone": "","status_code": 200,"status": 100,"description": "请同意我们的条款"}
+  ]
+}
